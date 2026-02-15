@@ -8,107 +8,127 @@ const Demo = () => (
     <section className="gradient-hero moroccan-pattern py-20">
       <div className="container mx-auto px-4 text-center">
         <AnimatedSection>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Experience SAFAR</h1>
-          <p className="text-white/70 max-w-2xl mx-auto text-lg">See how our AI-powered features work in action.</p>
+          <h1 className="text-4xl md:text-5xl font-bold font-serif text-white mb-6">Experience SafarMA</h1>
+          <p className="text-white/80 max-w-2xl mx-auto text-xl font-light">See how our AI-powered features work in action.</p>
         </AnimatedSection>
       </div>
     </section>
 
-    <section className="py-20">
+    <section className="py-20 bg-[#FDFBF7]">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto items-center">
           {/* Scan & Discover Demo */}
           <AnimatedSection>
-            <h2 className="text-2xl font-bold text-foreground mb-6">📸 Scan & Discover</h2>
-            <div className="bg-card rounded-3xl border border-border overflow-hidden shadow-xl">
-              {/* Phone screen */}
-              <div className="bg-gradient-to-b from-deep-blue to-primary p-6 relative min-h-[400px] flex flex-col">
-                <div className="flex items-center justify-between mb-4">
-                  <p className="text-white/80 text-sm font-medium">SAFAR Camera</p>
-                  <Camera className="h-5 w-5 text-white/60" />
+            <div className="flex items-center mb-6">
+              <div className="w-12 h-12 rounded-full bg-[#C41E3A]/10 flex items-center justify-center mr-4">
+                 <Camera className="h-6 w-6 text-[#C41E3A]" />
+              </div>
+              <h2 className="text-3xl font-bold font-serif text-[#1B365D]">Scan & Discover</h2>
+            </div>
+            
+            <div className="bg-white rounded-[2.5rem] border-[8px] border-[#1B365D] overflow-hidden shadow-2xl relative">
+              {/* Phone Status Bar */}
+              <div className="bg-[#1B365D] text-white px-6 py-3 flex justify-between text-xs font-medium z-10 relative">
+                 <span>9:41</span>
+                 <div className="flex gap-1">
+                    <div className="w-4 h-4 rounded-full bg-[#2E5A35]"></div>
+                    <div className="w-4 h-4 rounded-full bg-[#D4A017]"></div>
+                 </div>
+              </div>
+
+              {/* Phone content */}
+              <div className="bg-gradient-to-b from-[#1B365D] to-[#0f1e33] p-6 relative min-h-[500px] flex flex-col">
+                <div className="flex items-center justify-between mb-8">
+                  <p className="text-white/90 text-sm font-medium tracking-wider uppercase">SafarMA Lens</p>
+                  <Camera className="h-5 w-5 text-[#D4A017]" />
                 </div>
+                
                 {/* Viewfinder */}
-                <div className="flex-1 border-2 border-dashed border-secondary/40 rounded-2xl flex items-center justify-center relative">
-                  <div className="text-center">
-                    <div className="w-20 h-20 mx-auto mb-3 rounded-xl bg-secondary/20 flex items-center justify-center">
-                      <span className="text-3xl">◆</span>
+                <div className="flex-1 border-2 border-dashed border-[#D4A017]/50 rounded-3xl flex items-center justify-center relative bg-black/20 backdrop-blur-sm">
+                  <div className="text-center z-10">
+                    <div className="w-24 h-24 mx-auto mb-4 rounded-2xl bg-[#D4A017]/20 border border-[#D4A017] flex items-center justify-center animate-pulse">
+                      <span className="text-4xl text-[#D4A017]">❖</span>
                     </div>
-                    <p className="text-white/60 text-sm">Zellige tile detected</p>
+                    <p className="text-white font-medium drop-shadow-md">Zellige Pattern Detected</p>
+                    <p className="text-white/60 text-xs mt-1">Analyzing geometry...</p>
                   </div>
+                  
                   {/* Corner brackets */}
-                  <div className="absolute top-2 left-2 w-6 h-6 border-t-2 border-l-2 border-secondary rounded-tl" />
-                  <div className="absolute top-2 right-2 w-6 h-6 border-t-2 border-r-2 border-secondary rounded-tr" />
-                  <div className="absolute bottom-2 left-2 w-6 h-6 border-b-2 border-l-2 border-secondary rounded-bl" />
-                  <div className="absolute bottom-2 right-2 w-6 h-6 border-b-2 border-r-2 border-secondary rounded-br" />
+                  <div className="absolute top-4 left-4 w-8 h-8 border-t-4 border-l-4 border-[#C41E3A] rounded-tl-lg" />
+                  <div className="absolute top-4 right-4 w-8 h-8 border-t-4 border-r-4 border-[#C41E3A] rounded-tr-lg" />
+                  <div className="absolute bottom-4 left-4 w-8 h-8 border-b-4 border-l-4 border-[#C41E3A] rounded-bl-lg" />
+                  <div className="absolute bottom-4 right-4 w-8 h-8 border-b-4 border-r-4 border-[#C41E3A] rounded-br-lg" />
                 </div>
+
                 {/* Info popup */}
                 <motion.div
-                  initial={{ y: 20, opacity: 0 }}
+                  initial={{ y: 50, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   viewport={{ once: true }}
-                  transition={{ delay: 0.5 }}
-                  className="mt-4 bg-card rounded-2xl p-4 border border-border"
+                  transition={{ delay: 0.8 }}
+                  className="mt-6 bg-white/95 backdrop-blur-md rounded-2xl p-5 border border-[#D4A017]/30 shadow-lg"
                 >
-                  <h3 className="font-bold text-foreground mb-1">Zellige Mosaic — Fez</h3>
-                  <p className="text-xs text-muted-foreground mb-3">A traditional geometric tilework dating to the 10th century. Each piece is hand-chiseled by master craftsmen (maâlems).</p>
-                  <div className="flex gap-2">
-                    <Button size="sm" className="bg-secondary text-secondary-foreground text-xs gap-1">
-                      <Volume2 className="h-3 w-3" /> Audio Guide
-                    </Button>
-                    <Button size="sm" variant="outline" className="text-xs gap-1">
-                      <MapPin className="h-3 w-3" /> Where to Buy
-                    </Button>
+                  <div className="flex justify-between items-start mb-2">
+                     <h4 className="font-bold text-[#1B365D] font-serif text-lg">Zellige Fassi</h4>
+                     <span className="bg-[#2E5A35]/10 text-[#2E5A35] text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wide">14th Century</span>
                   </div>
+                  <p className="text-xs text-[#1B365D]/70 leading-relaxed">
+                    This geometric tilework represents the unity of existence. The 8-pointed star symbolizes the connection between heaven and earth.
+                  </p>
+                  <Button size="sm" className="w-full mt-3 bg-[#D4A017] hover:bg-[#b88a14] text-white text-xs font-bold h-8">
+                     Learn More
+                  </Button>
                 </motion.div>
               </div>
             </div>
           </AnimatedSection>
 
-          {/* Time Travel Demo */}
+          {/* Audio Tour Demo */}
           <AnimatedSection delay={0.2}>
-            <h2 className="text-2xl font-bold text-foreground mb-6">⏳ Time Travel Guide</h2>
-            <div className="bg-card rounded-3xl border border-border overflow-hidden shadow-xl">
-              <div className="bg-gradient-to-b from-deep-blue to-primary p-6 min-h-[400px] flex flex-col">
-                <div className="flex items-center justify-between mb-4">
-                  <p className="text-white/80 text-sm font-medium">Time Travel Mode</p>
-                  <History className="h-5 w-5 text-white/60" />
+             <div className="flex items-center mb-6 lg:justify-end">
+               <h2 className="text-3xl font-bold font-serif text-[#1B365D] mr-4 text-right">Smart Narrative</h2>
+               <div className="w-12 h-12 rounded-full bg-[#1B365D]/10 flex items-center justify-center">
+                  <Volume2 className="h-6 w-6 text-[#1B365D]" />
+               </div>
+             </div>
+             
+             <div className="bg-white rounded-[2.5rem] border-[8px] border-[#D4A017]/30 overflow-hidden shadow-xl p-8 relative">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#D4A017]/10 rounded-bl-[100px] z-0"></div>
+                
+                <div className="flex items-center gap-4 mb-8 relative z-10">
+                   <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-[#D4A017] shadow-md">
+                      <img src="https://images.unsplash.com/photo-1549144511-2c06979509df?auto=format&fit=crop&q=80&w=200" alt="Guide" className="w-full h-full object-cover" />
+                   </div>
+                   <div>
+                      <h4 className="font-bold text-[#1B365D] text-lg">Hassan Tower Guide</h4>
+                      <p className="text-[#2E5A35] text-sm font-medium">AI Historian • Rabat</p>
+                   </div>
                 </div>
-                <div className="flex-1 flex flex-col items-center justify-center gap-6">
-                  <div className="w-32 h-32 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center">
-                    <span className="text-5xl">🕌</span>
-                  </div>
-                  <p className="text-white font-semibold">Koutoubia Mosque</p>
-                  {/* Timeline slider */}
-                  <div className="w-full bg-white/10 rounded-full p-1">
-                    <div className="flex justify-between text-xs text-white/60 px-2 mb-2">
-                      <span>1147</span>
-                      <span>1500</span>
-                      <span>1800</span>
-                      <span>Today</span>
-                    </div>
-                    <div className="h-2 bg-white/10 rounded-full relative">
-                      <div className="absolute left-1/3 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-secondary border-2 border-white shadow-lg" />
-                      <div className="h-full w-1/3 bg-secondary/60 rounded-full" />
-                    </div>
-                  </div>
+                
+                {/* Audio Waveform Visualization */}
+                <div className="h-24 flex items-center justify-center gap-1 mb-6">
+                   {[...Array(15)].map((_, i) => (
+                      <motion.div
+                        key={i}
+                        animate={{ height: [16, 48, 16] }}
+                        transition={{ 
+                           repeat: Infinity, 
+                           duration: 1.5, 
+                           delay: i * 0.1,
+                           ease: "easeInOut"
+                        }}
+                        className="w-2 rounded-full bg-gradient-to-t from-[#C41E3A] to-[#D4A017]"
+                      />
+                   ))}
                 </div>
-                <motion.div
-                  initial={{ y: 20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.7 }}
-                  className="mt-4 bg-card rounded-2xl p-4 border border-border"
-                >
-                  <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center text-lg shrink-0">👳</div>
-                    <div>
-                      <p className="text-sm font-semibold text-foreground">Yacoub El Mansour</p>
-                      <p className="text-xs text-muted-foreground">"I commissioned this mosque in 1147 to mark our dynasty's power..."</p>
-                    </div>
-                  </div>
-                </motion.div>
-              </div>
-            </div>
+                
+                <div className="bg-[#1B365D]/5 rounded-xl p-4 border border-[#1B365D]/10 relative">
+                   <div className="absolute -top-3 left-6 bg-white px-2 py-0 text-2xl text-[#D4A017]">❝</div>
+                   <p className="text-[#1B365D]/80 italic text-sm leading-relaxed pt-2">
+                      "Construction began in 1195. Look closely at the intricate lattice work on the northern face..."
+                   </p>
+                </div>
+             </div>
           </AnimatedSection>
         </div>
       </div>

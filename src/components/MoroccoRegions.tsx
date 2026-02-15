@@ -14,7 +14,7 @@ const MoroccoRegions = () => {
               🇲🇦 Explore Morocco
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Discover Morocco's most enchanting destinations. SAFAR adapts to each region with localized recommendations and cultural insights.
+              Discover Morocco's most enchanting destinations. SafarMA adapts to each region with localized recommendations and cultural insights.
             </p>
           </div>
         </AnimatedSection>

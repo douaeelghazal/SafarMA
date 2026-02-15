@@ -23,13 +23,13 @@ const Team = () => (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
           {team.map((t, i) => (
             <AnimatedSection key={i} delay={i * 0.1}>
-              <div className="p-6 rounded-2xl bg-card border border-border hover:border-secondary/30 hover:shadow-lg transition-all text-center">
-                <div className="w-20 h-20 rounded-full bg-muted flex items-center justify-center mx-auto mb-4">
-                  <User className="h-8 w-8 text-muted-foreground" />
+              <div className="p-6 rounded-2xl bg-card border border-[#D4A017]/20 hover:border-[#D4A017] hover:shadow-lg transition-all text-center group">
+                <div className="w-20 h-20 rounded-full bg-[#1B365D]/5 flex items-center justify-center mx-auto mb-4 group-hover:bg-[#1B365D]/10 transition-colors">
+                  <User className="h-8 w-8 text-[#1B365D]" />
                 </div>
-                <h3 className="font-bold text-foreground text-lg">{t.name}</h3>
-                <p className="text-sm text-secondary font-medium mb-2">{t.role}</p>
-                <p className="text-xs text-muted-foreground">{t.bio}</p>
+                <h3 className="font-bold font-serif text-[#C41E3A] text-xl mb-1">{t.name}</h3>
+                <p className="text-sm text-[#D4A017] font-medium mb-3 uppercase tracking-wide">{t.role}</p>
+                <p className="text-sm text-foreground/70 leading-relaxed font-sans">{t.bio}</p>
               </div>
             </AnimatedSection>
           ))}

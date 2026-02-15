@@ -14,9 +14,15 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        serif: ["'Playfair Display'", "serif"],
+        sans: ["'Plus Jakarta Sans'", "sans-serif"],
       },
       colors: {
+        "safar-red": "#C41E3A",
+        "safar-green": "#2E5A35",
+        "safar-gold": "#D4A017",
+        "safar-cream": "#FDFBF7",
+        "safar-blue": "#1B365D",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

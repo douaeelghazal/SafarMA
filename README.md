@@ -1,12 +1,12 @@
-# SAFAR - Smart AI For Augmented Tourism
+# SafarMA - Votre Compagnon IA au Coeur du Maroc
 
 ## Project Overview
 
-SAFAR is an AI-powered tourism platform that transforms cultural experiences through intelligent recommendations, augmented reality features, and personalized travel planning. This version is fully adapted for Morocco with complete multi-language support (English, French, Arabic, Moroccan Darija).
+SafarMA is an AI-powered tourism platform that transforms cultural experiences through intelligent recommendations, augmented reality features, and personalized travel planning. This version is fully adapted for Morocco with comprehensive localization and cultural context integration.
 
 ## Features
 
-- 🌍 **4-Language Support**: English, French, Arabic, and Moroccan Darija
+- 🌍 **French & Arabic Support**: Full localization for Moroccan users
 - 🗺️ **10 Moroccan Regions**: Complete coverage with cultural context
 - 🎨 **Cultural Integration**: Traditional crafts, cuisine, and heritage
 - 💰 **Morocco-Specific**: Currency (MAD), pricing, and local information

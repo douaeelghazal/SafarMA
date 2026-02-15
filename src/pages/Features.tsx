@@ -1,48 +1,67 @@
-import { Map, Heart, History, Bell, Camera, Wifi } from "lucide-react";
 import { motion } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
+import { Map, Camera, MessageSquare, Heart, Clock, Wifi } from "lucide-react";
 
-const features = [
-  { icon: Map, title: "AI Trip Planner", desc: "Budget-aware itinerary generation in 2 minutes. Automatic allocation: 30% lodging, 20% transport, 25% food, 15% activities, 10% reserve.", color: "bg-blue-500/10 text-blue-500" },
-  { icon: Heart, title: "Empathy Guide", desc: "Mood-based recommendations with emotional check-ins. Detects fatigue, suggests wellness pauses, and adapts in real time.", color: "bg-rose-500/10 text-rose-500" },
-  { icon: History, title: "Time Travel Guide", desc: "Historical timeline slider at each site. Chat with AI-powered historical figures and see before/after photo comparisons.", color: "bg-amber-500/10 text-amber-500" },
-  { icon: Bell, title: "Smart Reminders", desc: "Magic moment alerts for sunsets and events. Crowd-avoidance notifications and optimal timing calculations.", color: "bg-emerald-500/10 text-emerald-500" },
-  { icon: Camera, title: "Scan & Discover", desc: "Point your camera at zellige, carpets, food, or instruments — get history, symbolism, crafting process, and chat with an AI artisan.", color: "bg-purple-500/10 text-purple-500" },
-  { icon: Wifi, title: "Offline Mode", desc: "Full functionality without internet. Pre-downloaded cultural data and maps for uninterrupted exploration.", color: "bg-cyan-500/10 text-cyan-500" },
+const featuresList = [
+  {
+    icon: Map,
+    title: "Planificateur Intelligent",
+    description: "Créez des itinéraires sur mesure en quelques secondes. Notre IA prend en compte votre budget, vos centres d'intérêt et votre rythme de voyage pour optimiser chaque journée.",
+    color: "text-[#1B365D]",
+    bgColor: "bg-[#1B365D]/10",
+    borderColor: "border-[#1B365D]"
+  },
+  {
+    icon: Camera,
+    title: "Scanner du Patrimoine",
+    description: "Pointez votre caméra vers un monument, un plat ou un motif artisanal. L'application identifie l'objet et vous raconte son histoire, sa signification et ses secrets de fabrication.",
+    color: "text-[#C41E3A]",
+    bgColor: "bg-[#C41E3A]/10",
+    borderColor: "border-[#C41E3A]"
+  },
+  {
+    icon: MessageSquare,
+    title: "Chatbot Culturel",
+    description: "Dites adieu aux guides touristiques génériques. Discutez avec votre assistant local disponible 24/7 pour obtenir des recommandations de restaurants, des conseils pratiques ou des anecdotes historiques.",
+    color: "text-[#D4A017]",
+    bgColor: "bg-[#D4A017]/10",
+    borderColor: "border-[#D4A017]"
+  }
 ];
 
 const Features = () => (
-  <div className="pt-16">
-    <section className="gradient-hero moroccan-pattern py-20">
-      <div className="container mx-auto px-4 text-center">
-        <AnimatedSection>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">The 5 Pillars of SAFAR</h1>
-          <p className="text-white/70 max-w-2xl mx-auto text-lg">Each pillar is an AI-powered module designed to transform a different dimension of the travel experience.</p>
-        </AnimatedSection>
-      </div>
-    </section>
-
-    <section className="py-20">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {features.map((f, i) => (
-            <AnimatedSection key={i} delay={i * 0.1}>
-              <motion.div
-                whileHover={{ y: -6, scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 300 }}
-                className="p-6 rounded-2xl bg-card border border-border hover:border-secondary/30 hover:shadow-xl transition-all h-full"
-              >
-                <div className={`w-14 h-14 rounded-xl ${f.color} flex items-center justify-center mb-5`}>
-                  <f.icon className="h-7 w-7" />
-                </div>
-                <h3 className="text-xl font-bold text-foreground mb-3">{f.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{f.desc}</p>
-              </motion.div>
-            </AnimatedSection>
-          ))}
+  <div className="pt-24 min-h-screen bg-[#FDFBF7]">
+    <div className="container mx-auto px-4 pb-20">
+      <AnimatedSection>
+        <div className="text-center mb-16 max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold font-serif text-[#1B365D] mb-6">Fonctionnalités Clés</h1>
+          <p className="text-[#1B365D]/80 text-xl font-light">
+            Découvrez comment SafarMA transforme votre expérience de voyage grâce à une intelligence artificielle éthique et culturelle.
+          </p>
         </div>
+      </AnimatedSection>
+
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {featuresList.map((feature, index) => (
+          <AnimatedSection key={index} delay={index * 0.1}>
+            <motion.div 
+              whileHover={{ y: -5 }}
+              className={`h-full bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all border-t-4 ${feature.borderColor}`}
+            >
+              <div className={`w-14 h-14 rounded-xl ${feature.bgColor} flex items-center justify-center mb-6`}>
+                <feature.icon className={`w-7 h-7 ${feature.color}`} />
+              </div>
+              <h3 className={`text-xl font-bold font-serif mb-4 ${feature.color}`}>
+                {feature.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {feature.description}
+              </p>
+            </motion.div>
+          </AnimatedSection>
+        ))}
       </div>
-    </section>
+    </div>
   </div>
 );
 

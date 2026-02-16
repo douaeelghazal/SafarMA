@@ -15,8 +15,8 @@ const ChatbotPopup = () => {
                 <span className="text-xs font-bold text-deep-blue">AI</span>
               </div>
               <div>
-                <p className="text-sm font-semibold text-white">SAFAR Assistant</p>
-                <p className="text-xs text-white/60">Powered by AI</p>
+                <p className="text-sm font-semibold text-white">Assistant SAFAR</p>
+                <p className="text-xs text-white/60">Propulsé par IA</p>
               </div>
             </div>
             <Button variant="ghost" size="icon" onClick={() => setOpen(false)} className="text-white/80 hover:text-white">
@@ -25,13 +25,13 @@ const ChatbotPopup = () => {
           </div>
           <div className="p-4 h-48 flex items-end">
             <div className="bg-muted rounded-xl rounded-bl-none p-3 text-sm text-foreground">
-              👋 Marhaba! I'm your SAFAR AI guide. Ask me anything about smart tourism in Morocco!
+              👋 Marhaba ! Je suis votre guide IA SAFAR. Posez-moi toutes vos questions sur le tourisme intelligent au Maroc !
             </div>
           </div>
           <div className="p-3 border-t border-border flex gap-2">
             <input
               type="text"
-              placeholder="Ask something..."
+              placeholder="Posez une question..."
               className="flex-1 text-sm bg-muted rounded-lg px-3 py-2 outline-none text-foreground placeholder:text-muted-foreground"
             />
             <Button size="icon" className="bg-secondary text-secondary-foreground rounded-lg shrink-0">

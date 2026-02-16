@@ -4,13 +4,13 @@ import { Menu, X, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
-  { label: "Home", path: "/" },
-  { label: "About", path: "/about" },
-  { label: "Features", path: "/features" },
-  { label: "How It Works", path: "/how-it-works" },
-  { label: "Demo", path: "/demo" },
+  { label: "Accueil", path: "/" },
+  { label: "À propos", path: "/about" },
+  { label: "Fonctionnalités", path: "/features" },
+  { label: "Comment ça marche", path: "/how-it-works" },
+  { label: "Démo", path: "/demo" },
   { label: "Impact", path: "/impact" },
-  { label: "Team", path: "/team" },
+  { label: "Équipe", path: "/team" },
   { label: "Contact", path: "/contact" },
 ];
 

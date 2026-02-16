@@ -3,17 +3,17 @@ import { TrendingUp, Users, MapPin, Leaf, Building, Globe, Accessibility } from 
 import AnimatedSection from "@/components/AnimatedSection";
 
 const metrics = [
-  { icon: TrendingUp, value: 40, suffix: "%", label: "Cultural engagement increase", color: "text-[#2E5A35] bg-[#2E5A35]/10" },
-  { icon: Users, value: 60, suffix: "%", label: "Crowd redistribution efficiency", color: "text-[#1B365D] bg-[#1B365D]/10" },
-  { icon: MapPin, value: 3, suffix: "x", label: "Hidden sites discovered", color: "text-[#D4A017] bg-[#D4A017]/10" },
-  { icon: Leaf, value: 50, suffix: "%", label: "Reduced planning waste", color: "text-[#C41E3A] bg-[#C41E3A]/10" },
+  { icon: TrendingUp, value: 40, suffix: "%", label: "Augmentation de l'engagement culturel", color: "text-[#2E5A35] bg-[#2E5A35]/10" },
+  { icon: Users, value: 60, suffix: "%", label: "Efficacité de la redistribution des foules", color: "text-[#1B365D] bg-[#1B365D]/10" },
+  { icon: MapPin, value: 3, suffix: "x", label: "Sites cachés découverts", color: "text-[#D4A017] bg-[#D4A017]/10" },
+  { icon: Leaf, value: 50, suffix: "%", label: "Réduction des pertes de planification", color: "text-[#C41E3A] bg-[#C41E3A]/10" },
 ];
 
 const sdgs = [
-  { icon: Building, title: "Smart Cities", desc: "AI-driven visitor flow optimization for urban heritage sites.", color: "text-[#1B365D]" },
-  { icon: Globe, title: "Sustainable Tourism", desc: "Promoting lesser-known sites to reduce over-tourism impact.", color: "text-[#2E5A35]" },
-  { icon: Accessibility, title: "Digital Inclusion", desc: "Multilingual, offline-capable, empathy-driven design for all.", color: "text-[#C41E3A]" },
-  { icon: Leaf, title: "Cultural Preservation", desc: "Documenting and sharing intangible heritage through AI storytelling.", color: "text-[#D4A017]" },
+  { icon: Building, title: "Villes Intelligentes", desc: "Optimisation de flux de visiteurs par IA pour les sites du patrimoine urbain.", color: "text-[#1B365D]" },
+  { icon: Globe, title: "Tourisme Durable", desc: "Promotion des sites moins connus pour réduire l'impact du surtourisme.", color: "text-[#2E5A35]" },
+  { icon: Accessibility, title: "Inclusion Numérique", desc: "Conception multilingue, hors ligne et empathique pour tous.", color: "text-[#C41E3A]" },
+  { icon: Leaf, title: "Préservation Culturelle", desc: "Documentation et partage du patrimoine immatériel via la narration IA.", color: "text-[#D4A017]" },
 ];
 
 const Counter = ({ target, suffix, className }: { target: number; suffix: string; className?: string }) => {
@@ -52,8 +52,8 @@ const Impact = () => (
     <section className="gradient-hero moroccan-pattern py-20">
       <div className="container mx-auto px-4 text-center">
         <AnimatedSection>
-          <h1 className="text-4xl md:text-5xl font-bold font-serif text-white mb-6">Our Impact</h1>
-          <p className="text-white/80 max-w-2xl mx-auto text-xl font-light">Measurable results for sustainable, intelligent tourism.</p>
+          <h1 className="text-4xl md:text-5xl font-bold font-serif text-white mb-6">Notre Impact</h1>
+          <p className="text-white/80 max-w-2xl mx-auto text-xl font-light">Des résultats mesurables pour un tourisme durable et intelligent.</p>
         </AnimatedSection>
       </div>
     </section>
@@ -73,7 +73,7 @@ const Impact = () => (
         </div>
 
         <AnimatedSection className="text-center mb-16">
-          <h2 className="text-3xl font-bold font-serif text-[#1B365D] mb-4">Sustainable Development Goals Alignment</h2>
+          <h2 className="text-3xl font-bold font-serif text-[#1B365D] mb-4">Alignement avec les Objectifs de Développement Durable</h2>
           <div className="w-24 h-1 bg-[#D4A017] mx-auto rounded-full"></div>
         </AnimatedSection>
         

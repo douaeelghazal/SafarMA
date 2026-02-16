@@ -127,7 +127,7 @@ const Home = () => {
                                     </div>
 
                                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 translate-y-24 bg-[#FFFBE6] border-2 border-[#D4A017] rounded-xl p-3 w-48 shadow-2xl">
-                                        <h5 className="font-bold text-[#C41E3A] text-sm mb-1">Tajine Berbère</h5>
+                                        <h5 className="font-bold text-[#C41E3A] text-sm mb-1">Tajine - Plat ancestral</h5>
                                         <p className="text-[10px] text-gray-600 leading-tight">Plat conique traditionnel permettant une cuisson à l'étouffée.</p>
                                     </div>
 
@@ -159,7 +159,7 @@ const Home = () => {
                                             Raconte-moi l'histoire du Tajine! 🥘
                                         </div>
                                         <div className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm border border-gray-100 self-start max-w-[85%] text-gray-600">
-                                            Bien sûr! Le Tajine est un plat emblématique d'origine berbère...
+                                            Bien sûr! Le Tajine est un plat emblématique d'origine ancestrale...
                                         </div>
                                     </div>
                                     <div className="mt-auto mb-4 bg-gray-50 border border-gray-200 rounded-full h-10 w-full flex items-center px-4 text-xs text-gray-400">Écrire un message...</div>
@@ -184,7 +184,7 @@ const Home = () => {
                             <h3 className="text-2xl font-bold mb-8 text-[#1a1a1a]">Vos Préférences</h3>
                             
                             <div className="mb-8">
-                                <label className="text-sm text-gray-500 font-bold mb-4 block">Mood</label>
+                                <label className="text-sm text-gray-500 font-bold mb-4 block">Ambiance</label>
                                 <div className="grid grid-cols-3 gap-4">
                                     <div className="p-4 rounded-xl border-2 border-gray-100 text-center hover:border-gray-300 cursor-pointer">
                                         <div className="text-2xl mb-2">🧘‍♂️</div>
@@ -226,7 +226,7 @@ const Home = () => {
 
                                     {[
                                         { time: '9h00', text: 'Petit-déjeuner sur terrasse avec vue sur l\'Atlas', icon: '☀️' },
-                                        { time: '13h00', text: 'Déjeuner berbère chez l\'habitant', icon: '🍲' },
+                                        { time: '13h00', text: 'Déjeuner traditionnel chez l\'habitant', icon: '🍲' },
                                         { time: '22h00', text: 'Thé à la menthe place Jemaa el-Fna', icon: '🍵' },
                                     ].map((item, i) => (
                                         <div key={i} className="flex gap-6 items-start relative">
@@ -283,7 +283,7 @@ const Home = () => {
                                 whileInView={{ x: 0, opacity: 1 }}
                                 className="absolute top-1/2 right-8 md:right-16 -translate-y-1/2 w-80 bg-white/95 backdrop-blur-md p-6 rounded-2xl shadow-xl border-l-8 border-[#2E5A35]"
                             >
-                                <h4 className="text-[#2E5A35] font-bold text-xl mb-3">Tajine - Plat ancestral berbère</h4>
+                                <h4 className="text-[#2E5A35] font-bold text-xl mb-3">Tajine - Plat ancestral</h4>
                                 <p className="text-sm text-gray-700 leading-relaxed mb-4">
                                     La forme conique permet de recycler la vapeur et de cuire avec très peu d'eau. Une invention géniale née dans les montagnes de l'Atlas il y a plus de 1000 ans.
                                 </p>
@@ -333,7 +333,7 @@ const Home = () => {
                                 
                                 <div className="flex flex-col gap-2 mt-4">
                                     <button className="bg-[#D4A017]/20 text-[#1a1a1a] text-xs font-bold py-3 px-4 rounded-full text-left w-full hover:bg-[#D4A017]/30 transition-colors">
-                                        📍 J'y vais du 'Chez Lamine'
+                                        📍 Itinéraire vers 'Chez Lamine'
                                     </button>
                                     <button className="bg-[#D4A017]/20 text-[#1a1a1a] text-xs font-bold py-3 px-4 rounded-full text-left w-full hover:bg-[#D4A017]/30 transition-colors">
                                         🥘 Choisir un tajine d'agneau
@@ -444,43 +444,31 @@ const Home = () => {
                 <div 
                     className="absolute inset-0 z-0 bg-cover bg-center"
                     style={{
-                        backgroundImage: 'url("https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=2000&auto=format&fit=crop")',
-                        filter: 'brightness(0.4) sepia(0.2)'
+                        backgroundImage: 'url("https://images.unsplash.com/photo-1539020140153-e479b8c22e70?q=80&w=2000&auto=format&fit=crop")', // Moroccan Architecture/Courtyard
+                        filter: 'brightness(0.6)'
                     }}
                 />
                 
-                <div className="relative z-10 container mx-auto px-4 flex flex-col md:flex-row items-center justify-between max-w-6xl gap-16">
-                     <div className="text-left md:w-1/2">
-                        <h2 className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                            Prêt à vivre le <br/> Maroc autrement ?
-                        </h2>
-                        <p className="text-2xl text-white/90 mb-12 font-light tracking-wide">Téléchargez maintenant.</p>
-                        <div className="flex flex-col sm:flex-row gap-4">
-                             <Button className="bg-black text-white hover:bg-gray-900 h-16 px-8 rounded-xl flex items-center gap-4 border border-gray-700 transition-transform hover:scale-105 active:scale-95">
-                                <span className="text-3xl">🍎</span>
-                                <div className="text-left">
-                                    <div className="text-[0.7rem] uppercase tracking-wider opacity-80">Download on the</div>
-                                    <div className="text-xl font-bold leading-none">App Store</div>
-                                </div>
-                             </Button>
-                             <Button className="bg-black text-white hover:bg-gray-900 h-16 px-8 rounded-xl flex items-center gap-4 border border-gray-700 transition-transform hover:scale-105 active:scale-95">
-                                <span className="text-2xl">▶️</span>
-                                <div className="text-left">
-                                    <div className="text-[0.7rem] uppercase tracking-wider opacity-80">UEIT IT ON</div>
-                                    <div className="text-xl font-bold leading-none">Google Play</div>
-                                </div>
-                             </Button>
-                        </div>
-                     </div>
-
-                     <div className="md:w-1/2 flex justify-center md:justify-end">
-                        <div className="bg-gradient-to-br from-[#D4A017] to-[#8B5A00] p-1 rounded-3xl relative rotate-3 hover:rotate-0 transition-transform duration-500">
-                             {/* Arch Frame */}
-                             <div className="bg-white p-6 rounded-[1.3rem] border-4 border-[#C41E3A] shadow-2xl">
-                                <QrCode className="w-56 h-56 text-gray-900" />
-                             </div>
-                        </div>
-                     </div>
+                <div className="relative z-10 container mx-auto px-4 flex flex-col items-center justify-center max-w-4xl text-center">
+                    <h2 className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
+                        Prêt à vivre le <br/> Maroc autrement ?
+                    </h2>
+                    <p className="text-2xl text-white/90 mb-12 font-light tracking-wide">Téléchargez maintenant.</p>
+                    
+                    <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                        <Button className="bg-black text-white hover:bg-gray-900 h-16 px-8 rounded-xl flex items-center gap-4 border border-gray-700 transition-transform hover:scale-105 active:scale-95 shadow-2xl">
+                            <div className="text-left">
+                                <div className="text-[0.7rem] uppercase tracking-wider opacity-80">Télécharger dans</div>
+                                <div className="text-xl font-bold leading-none">l'App Store</div>
+                            </div>
+                        </Button>
+                        <Button className="bg-black text-white hover:bg-gray-900 h-16 px-8 rounded-xl flex items-center gap-4 border border-gray-700 transition-transform hover:scale-105 active:scale-95 shadow-2xl">
+                            <div className="text-left">
+                                <div className="text-[0.7rem] uppercase tracking-wider opacity-80">DISPONIBLE SUR</div>
+                                <div className="text-xl font-bold leading-none">Google Play</div>
+                            </div>
+                        </Button>
+                    </div>
                 </div>
              </section>
 

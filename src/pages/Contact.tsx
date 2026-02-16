@@ -12,7 +12,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast({ title: "Message sent!", description: "We'll get back to you shortly." });
+    toast({ title: "Message envoyé !", description: "Nous vous répondrons sous peu." });
     setForm({ name: "", email: "", message: "" });
   };
 
@@ -21,8 +21,8 @@ const Contact = () => {
       <section className="gradient-hero moroccan-pattern py-20">
         <div className="container mx-auto px-4 text-center">
           <AnimatedSection>
-            <h1 className="text-4xl md:text-5xl font-bold font-serif text-white mb-6">Get in Touch</h1>
-            <p className="text-white/80 max-w-2xl mx-auto text-xl font-light">Interested in SafarMA? Let's talk about the future of intelligent tourism.</p>
+            <h1 className="text-4xl md:text-5xl font-bold font-serif text-white mb-6">Contactez-nous</h1>
+            <p className="text-white/80 max-w-2xl mx-auto text-xl font-light">Intéressé par SafarMA ? Parlons de l'avenir du tourisme intelligent.</p>
           </AnimatedSection>
         </div>
       </section>
@@ -33,11 +33,11 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="bg-white rounded-2xl p-8 border border-[#D4A017]/20 shadow-md">
               <div className="space-y-6 mb-8">
                 <div>
-                  <label className="text-sm font-bold text-[#1B365D] mb-2 block uppercase tracking-wide">Name</label>
+                  <label className="text-sm font-bold text-[#1B365D] mb-2 block uppercase tracking-wide">Nom</label>
                   <Input
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
-                    placeholder="Your name"
+                    placeholder="Votre nom"
                     required
                     className="border-[#D4A017]/30 focus:border-[#D4A017] focus:ring-[#D4A017] bg-[#FDFBF7]"
                   />
@@ -48,7 +48,7 @@ const Contact = () => {
                     type="email"
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    placeholder="you@example.com"
+                    placeholder="vous@exemple.com"
                     required
                     className="border-[#D4A017]/30 focus:border-[#D4A017] focus:ring-[#D4A017] bg-[#FDFBF7]"
                   />
@@ -58,14 +58,14 @@ const Contact = () => {
                   <Textarea
                     value={form.message}
                     onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    placeholder="Tell us about your interest in SafarMA..."
+                    placeholder="Racontez-nous votre intérêt pour SafarMA..."
                     required
                     className="min-h-[150px] border-[#D4A017]/30 focus:border-[#D4A017] focus:ring-[#D4A017] bg-[#FDFBF7]"
                   />
                 </div>
               </div>
               <Button type="submit" className="w-full bg-[#C41E3A] hover:bg-[#A01830] text-white font-bold py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all gap-2">
-                <Send className="w-5 h-5" /> Send Message
+                <Send className="w-5 h-5" /> Envoyer le Message
               </Button>
             </form>
           </AnimatedSection>

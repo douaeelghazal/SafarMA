@@ -54,7 +54,7 @@ const Footer = () => (
 
       <div className="text-center text-xs opacity-50 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
         <span>&copy; 2026 SafarMA. Tous droits réservés.</span>
-        <span>Fait avec ❤️ au Maroc 🇲🇦</span>
+        <span>Fait avec amour au Maroc</span>
       </div>
     </div>
   </footer>

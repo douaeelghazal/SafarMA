@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Star, QrCode, Download, Camera, BookOpen } from "lucide-react";
+import { ArrowRight, Star, QrCode, Download, Camera, BookOpen, Smile, Briefcase, Utensils, Sun, Coffee, Bot, Soup } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const SafarLogo = () => (
@@ -145,21 +145,25 @@ const Home = () => {
                              <PhoneMockup title="Chatbot Culturel">
                                 <div className="p-4 pt-12 flex flex-col h-full bg-[#fcfcfc]">
                                      <div className="flex items-center gap-3 mb-6 pb-4 border-b border-gray-100">
-                                        <div className="w-10 h-10 rounded-full bg-[#C41E3A]/10 flex items-center justify-center border border-[#C41E3A]/20">🤖</div>
+                                        <div className="w-10 h-10 rounded-full bg-[#C41E3A]/10 flex items-center justify-center border border-[#C41E3A]/20">
+                                            <Bot className="w-6 h-6 text-[#C41E3A] stroke-[1.5]" />
+                                        </div>
                                         <div>
                                             <div className="font-bold text-sm text-[#C41E3A]">Safar Guide</div>
-                                            <div className="text-[10px] text-green-600 font-bold uppercase tracking-wider">● En ligne</div>
+                                            <div className="text-[10px] text-green-600 font-bold uppercase tracking-wider flex items-center gap-1">
+                                                <span className="w-2 h-2 bg-green-600 rounded-full inline-block" /> En ligne
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="space-y-4 text-xs font-medium">
                                         <div className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm border border-gray-100 self-start max-w-[85%] text-gray-600">
-                                            Bonjour! Je peux vous aider à découvrir l'histoire de ce lieu.
+                                            Bonjour ! Je peux vous aider à découvrir l'histoire de ce lieu.
                                         </div>
                                         <div className="bg-[#C41E3A] text-white p-3 rounded-2xl rounded-tr-none shadow-md self-end max-w-[85%]">
-                                            Raconte-moi l'histoire du Tajine! 🥘
+                                            Raconte-moi l'histoire du Tajine !
                                         </div>
                                         <div className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm border border-gray-100 self-start max-w-[85%] text-gray-600">
-                                            Bien sûr! Le Tajine est un plat emblématique d'origine ancestrale...
+                                            Bien sûr ! Le Tajine est un plat emblématique d'origine ancestrale...
                                         </div>
                                     </div>
                                     <div className="mt-auto mb-4 bg-gray-50 border border-gray-200 rounded-full h-10 w-full flex items-center px-4 text-xs text-gray-400">Écrire un message...</div>
@@ -186,16 +190,16 @@ const Home = () => {
                             <div className="mb-8">
                                 <label className="text-sm text-gray-500 font-bold mb-4 block">Ambiance</label>
                                 <div className="grid grid-cols-3 gap-4">
-                                    <div className="p-4 rounded-xl border-2 border-gray-100 text-center hover:border-gray-300 cursor-pointer">
-                                        <div className="text-2xl mb-2">🧘‍♂️</div>
+                                    <div className="p-4 rounded-xl border-2 border-gray-100 flex flex-col items-center justify-center hover:border-gray-300 cursor-pointer">
+                                        <Smile className="w-8 h-8 mb-2 text-gray-700" />
                                         <div className="font-bold text-sm">Détente</div>
                                     </div>
-                                    <div className="p-4 rounded-xl border-2 border-[#C41E3A] bg-[#C41E3A] text-white shadow-lg transform scale-105 cursor-pointer">
-                                        <div className="text-2xl mb-2">🎒</div>
+                                    <div className="p-4 rounded-xl border-2 border-[#C41E3A] bg-[#C41E3A] text-white shadow-lg transform scale-105 flex flex-col items-center justify-center cursor-pointer">
+                                        <Briefcase className="w-8 h-8 mb-2" />
                                         <div className="font-bold text-sm">Aventure</div>
                                     </div>
-                                    <div className="p-4 rounded-xl border-2 border-gray-100 text-center hover:border-gray-300 cursor-pointer">
-                                        <div className="text-2xl mb-2">🥘</div>
+                                    <div className="p-4 rounded-xl border-2 border-gray-100 flex flex-col items-center justify-center hover:border-gray-300 cursor-pointer">
+                                        <Utensils className="w-8 h-8 mb-2 text-gray-700" />
                                         <div className="font-bold text-sm">Gastro</div>
                                     </div>
                                 </div>
@@ -225,13 +229,13 @@ const Home = () => {
                                     <div className="absolute left-3 top-2 bottom-2 w-0.5 bg-gray-200"></div>
 
                                     {[
-                                        { time: '9h00', text: 'Petit-déjeuner sur terrasse avec vue sur l\'Atlas', icon: '☀️' },
-                                        { time: '13h00', text: 'Déjeuner traditionnel chez l\'habitant', icon: '🍲' },
-                                        { time: '22h00', text: 'Thé à la menthe place Jemaa el-Fna', icon: '🍵' },
+                                        { time: '9h00', text: 'Petit-déjeuner sur terrasse avec vue sur l\'Atlas', icon: <Sun className="w-4 h-4 text-[#D4A017]" /> },
+                                        { time: '13h00', text: 'Déjeuner traditionnel chez l\'habitant', icon: <Soup className="w-4 h-4 text-[#D4A017]" /> },
+                                        { time: '22h00', text: 'Thé à la menthe place Jemaa el-Fna', icon: <Coffee className="w-4 h-4 text-[#D4A017]" /> },
                                     ].map((item, i) => (
                                         <div key={i} className="flex gap-6 items-start relative">
                                             <div className="w-7 h-7 rounded-full bg-[#FFFBE6] border-2 border-[#D4A017] flex items-center justify-center text-xs relative z-10 shrink-0 mt-1">
-                                                {/* Dot content if needed */}
+                                                {item.icon}
                                             </div>
                                             <div>
                                                 <div className="font-bold text-[#1a1a1a] text-sm mb-1">{item.time} - {item.text.split(' ')[0]}...</div>

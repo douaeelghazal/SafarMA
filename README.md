@@ -6,11 +6,11 @@ SafarMA est une plateforme touristique propulsée par l'IA qui transforme les ex
 
 ## Fonctionnalités
 
-- 🌍 **Support Français & Arabe** : Localisation complète pour les utilisateurs marocains
-- 🗺️ **Régions Marocaines** : Couverture complète avec contexte culturel
-- 🎨 **Intégration Culturelle** : Artisanat traditionnel, cuisine et patrimoine
-- 💰 **Spécifique au Maroc** : Devise (MAD), tarification et informations locales
-- 🚀 **Propulsé par l'IA** : Recommandations intelligentes et planification d'itinéraire
+- **Support Français & Arabe** : Localisation complète pour les utilisateurs marocains
+- **Régions Marocaines** : Couverture complète avec contexte culturel
+- **Intégration Culturelle** : Artisanat traditionnel, cuisine et patrimoine
+- **Spécifique au Maroc** : Devise (MAD), tarification et informations locales
+- **Propulsé par l'IA** : Recommandations intelligentes et planification d'itinéraire
 
 ## Pour Commencer
 

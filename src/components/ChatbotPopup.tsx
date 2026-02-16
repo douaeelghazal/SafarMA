@@ -25,7 +25,7 @@ const ChatbotPopup = () => {
           </div>
           <div className="p-4 h-48 flex items-end">
             <div className="bg-muted rounded-xl rounded-bl-none p-3 text-sm text-foreground">
-              👋 Marhaba ! Je suis votre guide IA SAFAR. Posez-moi toutes vos questions sur le tourisme intelligent au Maroc !
+              Marhaba ! Je suis votre guide IA SAFAR. Posez-moi toutes vos questions sur le tourisme intelligent au Maroc !
             </div>
           </div>
           <div className="p-3 border-t border-border flex gap-2">

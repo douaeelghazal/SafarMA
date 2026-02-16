@@ -1,105 +1,96 @@
 # SafarMA - Votre Compagnon IA au Coeur du Maroc
 
-## Project Overview
+## Présentation du Projet
 
-SafarMA is an AI-powered tourism platform that transforms cultural experiences through intelligent recommendations, augmented reality features, and personalized travel planning. This version is fully adapted for Morocco with comprehensive localization and cultural context integration.
+SafarMA est une plateforme touristique propulsée par l'IA qui transforme les expériences culturelles grâce à des recommandations intelligentes, des fonctionnalités de réalité augmentée et une planification de voyage personnalisée. Cette version est entièrement adaptée pour le Maroc avec une localisation complète et une intégration du contexte culturel.
 
-## Features
+## Fonctionnalités
 
-- 🌍 **French & Arabic Support**: Full localization for Moroccan users
-- 🗺️ **10 Moroccan Regions**: Complete coverage with cultural context
-- 🎨 **Cultural Integration**: Traditional crafts, cuisine, and heritage
-- 💰 **Morocco-Specific**: Currency (MAD), pricing, and local information
-- 🚀 **AI-Powered**: Smart recommendations and itinerary planning
+- 🌍 **Support Français & Arabe** : Localisation complète pour les utilisateurs marocains
+- 🗺️ **Régions Marocaines** : Couverture complète avec contexte culturel
+- 🎨 **Intégration Culturelle** : Artisanat traditionnel, cuisine et patrimoine
+- 💰 **Spécifique au Maroc** : Devise (MAD), tarification et informations locales
+- 🚀 **Propulsé par l'IA** : Recommandations intelligentes et planification d'itinéraire
 
-## Getting Started
+## Pour Commencer
 
 ### Installation
 
-Clone the repository and install dependencies:
+Clonez le dépôt et installez les dépendances :
 
 ```sh
-git clone <YOUR_GIT_URL>
+git clone https://github.com/douaeelghazal/SafarMA.git
 cd safar-ai-journeys
 npm install
 ```
 
-### Development
+### Développement
 
-Start the development server:
+Lancez le serveur de développement :
 
 ```sh
 npm run dev
 ```
 
-The application will be available at `http://localhost:8080`
+L'application sera disponible sur `http://localhost:8080` (ou port indiqué)
 
-### Production Build
+### Build de Production
 
 ```sh
 npm run build
 ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Vous devez avoir Node.js et npm installés.
 
-Follow these steps:
+Suivez ces étapes :
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Étape 1 : Clonez le dépôt en utilisant l'URL Git du projet.
+git clone https://github.com/douaeelghazal/SafarMA.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Étape 2 : Naviguez vers le répertoire du projet.
+cd safar-ai-journeys-main
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Étape 3 : Installez les dépendances nécessaires.
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Étape 4 : Lancez le serveur de développement.
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Technologies Utilisées
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Ce projet est construit avec :
 
-**Use GitHub Codespaces**
+- **Vite** : Outil de build rapide et serveur de développement.
+- **TypeScript** : Superset typé de JavaScript.
+- **React** : Bibliothèque pour créer l'interface utilisateur.
+- **Tailwind CSS** : Framework CSS utilitaire.
+- **shadcn-ui** : Composants d'interface (design system).
+- **Framer Motion** : Animations fluides.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Déploiement
 
-## What technologies are used for this project?
+Déployez en utilisant votre plateforme préférée :
+- **Vercel** : Connectez simplement votre dépôt GitHub.
+- **Netlify** : Glissez-déposez le dossier `dist`.
+- **Docker** : Créez un conteneur avec Node.js.
+- **Serveur Traditionnel** : Hébergez le dossier `dist` sur n'importe quel serveur statique.
 
-This project is built with:
+## Adaptation Marocaine
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Cette version inclut des fonctionnalités spécifiques pour le Maroc :
 
-## Deployment
-
-Deeploy using your preferred hosting platform:
-- **Vercel**: Connect your GitHub repository
-- **Netlify**: Drag and drop the `dist` folder
-- **Docker**: Create a container with Node.js
-- **Traditional Server**: Host the `dist` folder on any static host
-
-## Morocco Adaptation
-
-This version includes comprehensive Morocco-specific features:
-
-### Regions Covered
-- Marrakech, Fez, Casablanca, Tangier, Essaouira
-- Meknes, Chefchaouen, Agadir, Ouarzazate, Tetouan
+### Régions Couvertes
+- Marrakech, Fès, Casablanca, Tanger, Essaouira
+- Meknès, Chefchaouen, Agadir, Ouarzazate, Tétouan
 
 ### Documentation
-- [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md) - Developer cheat sheet
-- [`IMPLEMENTATION_EXAMPLES.md`](IMPLEMENTATION_EXAMPLES.md) - Code examples
-- [`MOROCCO_ADAPTATION.md`](MOROCCO_ADAPTATION.md) - Complete feature guide
-- [`FEATURE_SHOWCASE.md`](FEATURE_SHOWCASE.md) - What's new
+- [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md) - Aide-mémoire pour développeurs
+- [`IMPLEMENTATION_EXAMPLES.md`](IMPLEMENTATION_EXAMPLES.md) - Exemples de code
+- [`MOROCCO_ADAPTATION.md`](MOROCCO_ADAPTATION.md) - Guide complet des fonctionnalités
+- [`FEATURE_SHOWCASE.md`](FEATURE_SHOWCASE.md) - Nouveautés
+
+## Licence
+
+Ce projet est sous licence MIT.
